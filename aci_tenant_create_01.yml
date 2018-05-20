@@ -11,5 +11,6 @@
         aci_tenant:
           validate_certs: False
           tenant: "{{ tenant_name }}"
+          host: {{ apic }} 
           description: "{{ tenant_description }}"
           state: present
