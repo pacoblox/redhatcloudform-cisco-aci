@@ -1,0 +1,17 @@
+---
+
+  - name: PLAYBOOK 1 - Create Tenant
+    hosts: servers
+    connection: local
+    gather_facts: no
+
+    tasks:
+
+      - name: Add a new tenant
+        aci_tenant:
+          host: apic
+          username: admin
+          password: SomeSecretPassword
+          tenant: production
+          description: Production tenant
+          state: present
