@@ -4,6 +4,7 @@
   - name: PLAYBOOK 1 - Create Tenant
     connection: local
     gather_facts: no
+    hosts: sandboxapicdc.cisco.com
 
     tasks:
 
