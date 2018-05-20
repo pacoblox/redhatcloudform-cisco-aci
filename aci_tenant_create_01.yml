@@ -1,0 +1,15 @@
+
+---
+
+  - name: PLAYBOOK 1 - Create Tenant
+    connection: local
+    gather_facts: no
+
+    tasks:
+
+      - name: Add a new tenant
+        aci_tenant:
+          validate_certs: False
+          tenant: "{{ tenant_name }}"
+          description: "{{ tenant_description }}"
+          state: present
