@@ -1,7 +1,7 @@
 ---
 
   - name: PLAYBOOK 1 - Create Tenant
-    hosts: servers
+    hosts: sandboxapicdc.cisco.com
     connection: local
     gather_facts: no
 
@@ -9,9 +9,9 @@
 
       - name: Add a new tenant
         aci_tenant:
-          host: apic
+          host: sandboxapicdc.cisco.com
           username: admin
-          password: SomeSecretPassword
-          tenant: production
+          password: ciscopsdt
+          tenant: Testpacoblox
           description: Production tenant
           state: present
