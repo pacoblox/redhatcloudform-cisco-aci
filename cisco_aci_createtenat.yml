@@ -1,0 +1,16 @@
+
+  - name: PLAYBOOK 1 - Create Tenant
+    hosts: "{{ aci_servers }}" 
+    connection: local
+    gather_facts: no
+
+    tasks:
+
+      - name: Add a new tenant
+        aci_tenant:
+          host: "{{ aci_servers }}" 
+          username: "{{ aci_servers }}" 
+          password: "{{ aci_password }}" 
+          tenant: "{{ aci_tenant }}" 
+          description: "{{ aci_description }}" 
+          state: present
