@@ -1,3 +1,4 @@
+---
 - name: Add a new tenant
   aci_tenant:
     host: apic
