@@ -13,4 +13,5 @@
           tenant: "{{ tenant_name }}"
           host: "{{ apic }}" 
           description: "{{ tenant_description }}"
+          password: "{{ apic_password }}"
           state: present
