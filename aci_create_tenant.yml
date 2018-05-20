@@ -12,6 +12,7 @@
           host: sandboxapicdc.cisco.com
           username: admin
           password: ciscopsdt
+          validate_certs: False
           tenant: Testpacoblox
           description: Production tenant
           state: present
